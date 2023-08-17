@@ -100,3 +100,4 @@ Add the code to connect to the wallet
   - run `pnpm install`
   - run `pnpm wagmi generate`
   - run `pnpm dev`
+  - 

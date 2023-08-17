@@ -1,0 +1,41 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+
+pids
+logs
+results
+tmp
+
+# API keys and secrets
+.env
+.env.test
+
+# Dependency directory
+node_modules
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Ignore built ts files
+dist/**/*
+
+# Ignore sample data
+samples/**/*
+
+
+# Docker
+.data/**/*
+
+# Auth data
+oauth/**/*
+
+# Testing
+coverage/**/*

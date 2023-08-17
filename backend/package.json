@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec ts-node -r tsconfig-paths/register src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "dependencies": {
+    "@pooltogether/utilities": "^0.7.0",
+    "@pooltogether/v4-client-js": "^1.18.1",
+    "@pooltogether/v4-pool-data": "^1.11.0",
+    "@pooltogether/v4-utils-js": "^0.1.7",
+    "@types/node": "^20.5.0",
+    "ethers": "^5.7.2",
+    "typescript": "^5.1.6"
+  }
+}

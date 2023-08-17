@@ -6,6 +6,7 @@ import { useAccount } from "wagmi";
 import SplashScreen from "@/components/screens/splash";
 import MainScreen from "@/components/screens/main";
 import NoSSR from "@/components/NoSSR";
+import DepositScreen from "@/components/screens/deposit";
 
 const Home: NextPage = () => {
   const { isConnected } = useAccount();
@@ -14,10 +15,10 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Stake4Good</title>
+        <title>Deposit | S4G</title>
       </Head>
       <div className=" h-full min-h-screen w-full bg-dark">
-        <NoSSR>{isConnected ? <MainScreen /> : <SplashScreen />}</NoSSR>
+        <DepositScreen />
       </div>
     </>
   );

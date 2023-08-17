@@ -3,9 +3,7 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import { type FC, type ReactNode, useEffect, useState } from "react";
 import { useAccount } from "wagmi";
-import SplashScreen from "@/components/screens/splash";
-import MainScreen from "@/components/screens/main";
-import NoSSR from "@/components/NoSSR";
+import WithdrawScreen from "@/components/screens/withdraw";
 
 const Home: NextPage = () => {
   const { isConnected } = useAccount();
@@ -14,10 +12,10 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Stake4Good</title>
+        <title>Withdraw | S4G</title>
       </Head>
       <div className=" h-full min-h-screen w-full bg-dark">
-        <NoSSR>{isConnected ? <MainScreen /> : <SplashScreen />}</NoSSR>
+        <WithdrawScreen />
       </div>
     </>
   );
