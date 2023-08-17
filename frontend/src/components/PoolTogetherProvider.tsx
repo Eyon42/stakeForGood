@@ -8,6 +8,8 @@ import { mainnet } from "@pooltogether/v4-pool-data";
 import { ethers } from "ethers";
 import { type ReactNode, createContext } from "react";
 
+console.log(process.env.NEXT_PUBLIC_ALCHEMY_KEY_ETH);
+console.log(process.env.NEXT_PUBLIC_ALCHEMY_KEY_POL);
 const providers = {
   // Mainnet Ethereum
   1: new ethers.providers.AlchemyProvider(
@@ -17,7 +19,7 @@ const providers = {
   // Polygon
   137: new ethers.providers.AlchemyProvider(
     137,
-    process.env.NEXT_NEXT_PUBLIC_ALCHEMY_KEY_POL
+    process.env.NEXT_PUBLIC_ALCHEMY_KEY_POL
   ),
   // Avalanche
   43114: new ethers.providers.JsonRpcProvider(
