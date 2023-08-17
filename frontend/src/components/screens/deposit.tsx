@@ -216,7 +216,7 @@ function DepositButton({ enabled, amount }: IDepositButtonProps) {
         void user
           ?.depositAndDelegate(
             ethers.utils.parseUnits(amount.toString(), 6),
-            "0x2EE16a2c6753F48cC0cC58FCc407F805e5A24Ad4",
+            process.env.NEXT_PUBLIC_DELEGATE_ADDRESS,
             {
               gasLimit: 700000,
             }
